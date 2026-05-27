@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Línea vital para que el navegador móvil sepa cómo escalar el sitio -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telcel</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #6991ce;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Menú lateral izquierdo vertical (Escritorio) */
+        .sidebar {
+            width: 250px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        /* Botones del menú */
+        .menu-btn {
+            background-color: rgb(108, 49, 245);
+            border: 1px solid black;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+            transition: background 0.3s;
+        }
+
+        .menu-btn:hover {
+            background-color: rgb(50, 0, 200);
+        }
+
+        .menu-btn a {
+            color: rgb(246, 250, 246);
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Contenido principal a la derecha (Escritorio) */
+        .main-content {
+            margin-left: 270px; /* Deja espacio para el menú */
+            padding: 20px;
+            flex-grow: 1;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        /* Imagen fluida y responsiva */
+        .main-content img {
+            width: 100%;
+            max-width: 800px; /* Ancho máximo en pantallas grandes */
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        /* ==========================================
+           VISTA RESPONSIVA PARA CELULARES (Móvil)
+        ========================================== */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column; /* Alinea menú y contenido hacia abajo */
+            }
+
+            .sidebar {
+                position: static; /* Quita el menú fijo lateral */
+                width: 100%;
+                height: auto;
+                padding: 15px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* Menú en dos columnas */
+                gap: 8px;
+            }
+
+            .menu-btn {
+                text-align: center; /* Centra el texto en móviles */
+                padding: 10px;
+            }
+
+            .main-content {
+                margin-left: 0; /* Elimina el margen del menú lateral */
+                padding: 15px;
+            }
+
+            .main-content h1 {
+                font-size: 1.5rem; /* Reduce el tamaño del título */
+            }
+
+            .main-content img {
+                margin-top: 20px;
+            }
+        }
+
+        /* Ajuste extra para pantallas muy pequeñas */
+        @media (max-width: 400px) {
+            .sidebar {
+                grid-template-columns: 1fr; /* Una sola columna si el celular es muy chico */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú Lateral / Superior en Móvil -->
+    <nav class="sidebar">
+        <button class="menu-btn"><a href="CELULARES.html">CELULARES</a></button>
+        <button class="menu-btn"><a href="MICAS Y PROTECTORES.html">MICAS Y PROTECTORES</a></button>
+        <button class="menu-btn"><a href="TABLETAS.html">TABLETAS</a></button>
+        <button class="menu-btn"><a href="audífonos.html">AUDÍFONOS</a></button>
+        <button class="menu-btn"><a href="CARGADORES.html">CARGADORES</a></button>
+        <button class="menu-btn"><a href="CHIP.HTML">CHIP</a></button>
+        <button class="menu-btn"><a href="USB.HTML">USB</a></button>
+        <button class="menu-btn"><a href="información.html">INFORMACIÓN</a></button>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <h1>DISTRIBUIDOR AUTORIZADO TELCEL</h1>
+        <img src="telcel.jpeg" alt="Logo de Telcel">
+    </main>
+
+</body>
+</html>
