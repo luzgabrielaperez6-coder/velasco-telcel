@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #6991ce;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Enlace de regreso al menú */
+        .btn-menu {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn-menu:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Contenedor de las tarjetas */
+        .contenedor-productos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Diseño de la Tarjeta */
+        .tarjeta {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s;
+        }
+
+        /* Efecto al pasar el cursor sobre la tarjeta */
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilo de las imágenes */
+        .tarjeta img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover; /* Evita que la imagen se deforme */
+        }
+
+        /* Contenido de texto de la tarjeta */
+        .contenido {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .contenido p {
+            font-size: 0.95rem;
+            color: #333;
+            margin: 0 0 15px 0;
+            line-height: 1.4;
+        }
+
+        /* Estilo del precio */
+        .precio {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #0000CD; /* Azul Telcel */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Enlace superior -->
+    <a href="TELCEL.HTML" class="btn-menu">← </a>
+ 
+    <!-- Contenedor principal de productos -->
+    <div class="contenedor-productos">
+        
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta">
+            <img src="usb 16 gb.jpg" alt="funda">
+            <div class="contenido">
+                <p>USB Kingston de 128 GB.</p>
+                <span class="precio">$180.00</span>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta">
+            <img src="usb 32 gb.jpg" alt="Moto g50 edge"> 
+            <div class="contenido">
+                <p>USB Adata de 64 GB.</p>
+                <span class="precio">$140.00</span>
+            </div>
+        </div>
+ <div class="tarjeta">
+            <img src="usb 64 gb.jpg" alt="protector tecno"> 
+            <div class="contenido">
+                <p>USB memori drive de 32 GB.</p>
+                <span class="precio">$100.00</span>
+            </div>
+        </div>
+
+         <div class="tarjeta">
+            <img src="usb de 150 gb.jpg" alt="mica iphone"> 
+            <div class="contenido">
+                <p>USB Stylos de 250 GB.</p>
+                <span class="precio">$240.00</span>
+            </div>
+        </div>
+
+ <div class="tarjeta">
+            <img src="usb de 250 gb.jpg" alt="mica moto"> 
+            <div class="contenido">
+                <p>USB Kingston de 32 GB.</p>
+                <span class="precio">$120.00</span>
+            </div>
+        </div>
+        
+        <div class="tarjeta">
+            <img src="usb kingston.jpg" alt="mica moto"> 
+            <div class="contenido">
+                <p>Usb de la marca HP de 128 gb</p>
+                <span class="precio">$180.50</span>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html> 

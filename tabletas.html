@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #6991ce;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Enlace de regreso al menú */
+        .btn-menu {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn-menu:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Contenedor de las tarjetas */
+        .contenedor-productos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Diseño de la Tarjeta */
+        .tarjeta {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s;
+        }
+
+        /* Efecto al pasar el cursor sobre la tarjeta */
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilo de las imágenes */
+        .tarjeta img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover; /* Evita que la imagen se deforme */
+        }
+
+        /* Contenido de texto de la tarjeta */
+        .contenido {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .contenido p {
+            font-size: 0.95rem;
+            color: #333;
+            margin: 0 0 15px 0;
+            line-height: 1.4;
+        }
+
+        /* Estilo del precio */
+        .precio {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #0000CD; /* Azul Telcel */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Enlace superior -->
+    <a href="TELCEL.HTML" class="btn-menu">← </a>
+ 
+    <!-- Contenedor principal de productos -->
+    <div class="contenedor-productos">
+        
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta">
+            <img src="Huawei.jpg" alt="huawei">
+            <div class="contenido">
+                <p> Modelo Microsoft surface pro 7 (intel core i3, i5, i7). </p>
+                <span class="precio">$12,000 MXN</span>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta">
+            <img src="honor.jpg" alt="honor"> 
+            <div class="contenido">
+                <p>Tablet Lenovo idea tab pro 12.7 pulgadas 256GB 8 GB RAM Luna Grey</p>
+                <span class="precio">$9,169.00 MXN</span>
+            </div>
+        </div>
+ <div class="tarjeta">
+            <img src="tablet samsung.jpg" alt="tablet samsung"> 
+            <div class="contenido">
+                <p> Modelo ipad estandar (de 11.a generacion, con pantalla de 10.9 u 11 pulgadas). junto a el con lápiz óptico compatible (Apple Pencil). </p>
+                <span class="precio">$10,000.00</span>
+            </div>
+        </div>
+
+         <div class="tarjeta">
+            <img src="tablet niño.jpg" alt="tablet para niño"> 
+            <div class="contenido">
+                <p>tableta android 15 para niños  </p>
+                <span class="precio">$ 1,457.91</span>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
